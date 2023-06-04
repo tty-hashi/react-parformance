@@ -12,7 +12,7 @@ const useQueryTags = () => {
   return useQuery<Tag[], Error>({
     queryKey: ['tags'],
     queryFn: getTags,
-    staleTime: 60000,
+    staleTime: Infinity,
   })
 }
 
